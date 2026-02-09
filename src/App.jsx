@@ -8,7 +8,7 @@ export default function App(){
      return (
         <div id="comps">
           <Badges color="purple" type="square" text="hello" />
-          <Banners variation="success" title="title" info="some info" single={true} />
+          <Banners status="success" single={true} />
           <Cards />
           <Testimonials />
         </div>
