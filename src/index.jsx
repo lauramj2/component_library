@@ -1,4 +1,4 @@
-import { createRoot } from 'react-dom/client'
+import ReactDOM from 'react-dom/client'
 import './index.css'
 import Badges from "./components/Badges.jsx"
 import Banners from "./components/Banners.jsx"
@@ -7,13 +7,14 @@ import Testimonials from "./components/Testimonials.jsx"
 
 function App() {
   return (
-    <>
-      <Badges />
-      <Banners />
+    <div id="container">
+      <Badges color="purple" type="square" text="hello" />
+      <Banners variation="success" title="title" info="some info" />
       <Cards />
       <Testimonials />
-    </>
+    </div>
   )
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App />)
