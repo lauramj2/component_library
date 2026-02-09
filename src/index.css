@@ -7,7 +7,7 @@ html, body, h1, p {
     padding: 0;
 }
 
-#container {
+#comps {
     margin: 2rem;
     display: flex;
     flex-direction: column;
