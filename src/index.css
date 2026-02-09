@@ -111,7 +111,7 @@ html, body, h1, p {
     font-size: 14px;
 }
 
-.infoDiv  p {
+.infoDiv > p {
     font-size: 14px;
 }
 
@@ -168,3 +168,53 @@ html, body, h1, p {
     color: #1C51B9;
 }
 
+/* Cards */
+
+.card {
+    position: relative;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 384px;
+    height: 208px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.cardIcon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card > h1 {
+   font-size: 18px;
+   font-weight: 500; 
+   line-height: 28px;
+   color: #111827;
+}
+
+.card > p {
+   font-size: 16px;
+   font-weight: 400; 
+   color: #6B7280;
+   line-height: 24px;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 25px 0px #0000001A;
+}
+
+.cardIcon:hover {
+    box-shadow: 0px 4px 6px -2px #0000000D;
+    /* box-shadow: 0px 10px 15px -3px #0000001A;   */
+}
