@@ -7,14 +7,20 @@ import Testimonials from "./components/Testimonials.jsx"
 export default function App(){
      return (
         <div id="comps">
+            <br />
+            <br />
           <Badges color="purple" type="square" text="hello" />
           <br />
-          <Banners status="success" single={true} />
+          <br />
+          <Banners status="success" single={false} />
           <br />
           <br />
           <Cards />
           <br />
+          <br />
           <Testimonials />
+          <br />
+          <br />
         </div>
       )
 }
